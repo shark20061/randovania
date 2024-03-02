@@ -461,16 +461,29 @@ Extra - room_id: [11]
   * L2 Hatch to Red Tower/Door to Lava Reservoirs
   * Extra - door_idx: (22,)
   > Door to Lava Maze
-      # TODO: add damage reqs
-      Varia Suit
+      Any of the following:
+          Varia Suit
+          # Easiest - Screw Attack and Space Jump to avoid all the enemies
+          Screw Attack and Space Jump and Damage Runs (Intermediate) and Heat Damage ≥ 60
+          # Otherwise dealing with the enemies will add time
+          Damage Runs (Advanced) and Heat Damage ≥ 100
+          All of the following:
+              # Shinespark across the room would be the fastest
+              Speed Booster and Damage Runs (Beginner) and Shinespark Tricks (Beginner) and Heat Damage ≥ 15 and Disabled Door Lock Rando and Disabled Entrance Rando
+              # Must break the wall in Processing Access
+              Can Break Single Bomb Blocks
 
 > Door to Lava Maze; Heals? False
   * Layers: default
   * L0 Hatch to Lava Maze/Door to Lava Reservoirs
   * Extra - door_idx: (23,)
   > Door to Red Tower
-      # TODO: add damage reqs
-      Varia Suit
+      Any of the following:
+          Varia Suit
+          # Easiest - Screw Attack and Space Jump to avoid all the enemies
+          Screw Attack and Space Jump and Damage Runs (Intermediate) and Heat Damage ≥ 60
+          # Otherwise dealing with the enemies will add time
+          Damage Runs (Advanced) and Heat Damage ≥ 100
 
 ----------------
 Lava Maze
@@ -491,22 +504,33 @@ Extra - room_id: [12]
   * L0 Hatch to Lava Reservoirs/Door to Lava Maze
   * Extra - door_idx: (24,)
   > Pickup (Power Bomb Tank)
-      # TODO: Can damage run this with varia (about 500 energy)
-      Gravity Suit and Varia Suit and Can Use Power Bombs
+      All of the following:
+          Can Use Power Bombs
+          Any of the following:
+              # Prevent the lava damage with both Suits
+              Gravity Suit and Varia Suit
+              # Varia only run - slower but lower damage
+              Varia Suit and Damage Runs (Intermediate) and Lava Damage ≥ 270
+              # Gravity only run - faster but higher damage
+              Gravity Suit and Damage Runs (Advanced) and Lava Damage ≥ 550
+              # Fusion Suit only run - slow and high damage
+              Damage Runs (Expert) and Lava Damage ≥ 700
   > Door to Sova Suite
       All of the following:
-          # Heat resistence - TODO: Add damage reqs
-          Varia Suit
+          # TODO - Find out why this was marked with a jump extend option, it really isn't needed because of the ladder
           Any of the following:
-              # Get up
-              Space Jump or Can Freeze Enemies
+              # Heat Damage
+              Varia Suit
               All of the following:
-                  # Jump Extends
-                  Jump Extends (Advanced)
+                  # Killing the enemies will make this easier
+                  Damage Runs (Advanced) and Heat Damage ≥ 100
                   Any of the following:
-                      # Kill Enemies
                       Charge Beam or Missiles ≥ 20 or Screw Attack
                       Power Bombs ≥ 2 and Can Use Power Bombs
+              # Just freezing the enemies is an option (takes a bit longer)
+              Damage Runs (Advanced) and Heat Damage ≥ 140 and Can Freeze Enemies
+              # Space Jump can speed the room up
+              Space Jump and Damage Runs (Intermediate) and Heat Damage ≥ 20
 
 > Door to Sova Suite; Heals? False
   * Layers: default
@@ -573,10 +597,20 @@ Extra - room_id: [15]
   * Extra - door_idx: (30,)
   > Door to Boiler Access
       All of the following:
-          # TODO: Heat DMG
-          Varia Suit
-          # Get around enemy
-          Charge Beam or Missiles ≥ 10 or Screw Attack or Movement (Intermediate) or Normal Damage ≥ 75
+          Any of the following:
+              # Ignore the Heat
+              Varia Suit
+              # Take the Heat
+              Damage Runs (Intermediate) and Heat Damage ≥ 110
+          Any of the following:
+              # Get around enemy
+              Charge Beam or Missiles ≥ 10 or Screw Attack or Normal Damage ≥ 120 or Can Freeze Enemies
+              # Full damage with no suits
+              Damage Boosts (Advanced) and Normal Damage ≥ 120
+              # 80% damage with Varia
+              Varia Suit and Damage Boosts (Intermediate) and Normal Damage ≥ 100
+              # 10% damage with both Suits
+              Gravity Suit and Varia Suit and Damage Boosts (Beginner) and Normal Damage ≥ 15
 
 > Door to Boiler Access; Heals? False
   * Layers: default
@@ -584,10 +618,20 @@ Extra - room_id: [15]
   * Extra - door_idx: (31,)
   > Door to Pyrochamber Access
       All of the following:
-          # Heat DMG - TODO: heat run?
-          Varia Suit
-          # Get around the enemy
-          Charge Beam or Missiles ≥ 10 or Screw Attack or Movement (Intermediate) or Normal Damage ≥ 75
+          Any of the following:
+              # Ignore the Heat
+              Varia Suit
+              # Take the Heat (the way back is shorter using the Crumble Block shortcut)
+              Damage Runs (Intermediate) and Heat Damage ≥ 70
+          Any of the following:
+              # Get around the enemy
+              Charge Beam or Missiles ≥ 10 or Screw Attack or Movement (Intermediate) or Can Freeze Enemies
+              # Full damage with no suits
+              Damage Boosts (Advanced) and Normal Damage ≥ 120
+              # 80% damage with varia
+              Varia Suit and Damage Boosts (Intermediate) and Normal Damage ≥ 100
+              # 10% damage with both
+              Gravity Suit and Varia Suit and Damage Boosts (Beginner) and Normal Damage ≥ 15
 
 ----------------
 Boiler Access
@@ -925,14 +969,20 @@ Extra - room_id: [27]
   > Door to Fiery Storage
       Any of the following:
           All of the following:
-              # Climb on bars
-              Charge Beam or Missiles ≥ 10
+              # Varia + Deal with the Sidehoppers
+              Varia Suit
+              Any of the following:
+                  Charge Beam or Missiles ≥ 6
+                  Screw Attack and Space Jump
+          All of the following:
+              # Space Jump + Screw Attack across the room
+              Screw Attack and Space Jump and Heat Damage ≥ 60
               Any of the following:
                   Varia Suit
                   Damage Runs (Intermediate) and Heat Damage ≥ 200
           All of the following:
-              # Shinespark
-              Speed Booster and Shinespark Tricks (Intermediate) and Disabled Door Lock Rando and Disabled Entrance Rando
+              # Shinespark across the room
+              Speed Booster and Damage Runs (Beginner) and Shinespark Tricks (Intermediate) and Heat Damage ≥ 20 and Disabled Door Lock Rando and Disabled Entrance Rando
               Any of the following:
                   Varia Suit
                   Damage Runs (Beginner) and Heat Damage ≥ 50
@@ -947,6 +997,18 @@ Extra - room_id: [27]
               # Lava Run
               Gravity Suit and Varia Suit
               Damage Runs (Advanced) and Heat Damage ≥ 100 and Lava Damage ≥ 200
+          All of the following:
+              # Fusion Suit + Deal with the Sidehoppers
+              Damage Runs (Intermediate) and Heat Damage ≥ 100
+              Charge Beam or Missiles ≥ 6
+          # Fusion Suit - Dip in the lava to avoid the Sidehoppers - include 2 flame jet hits because they spawn randomly
+          Damage Boosts (Advanced) and Damage Runs (Advanced) and Lava Damage ≥ 250 and Normal Damage ≥ 124
+          # Varia Suit - Lava Run + 2 flame jet hits
+          Varia Suit and Damage Boosts (Intermediate) and Damage Runs (Intermediate) and Lava Damage ≥ 60 and Normal Damage ≥ 36
+          # Gravity Suit - Lava Run + 2 flame jet hits
+          Gravity Suit and Damage Boosts (Advanced) and Damage Runs (Advanced) and Lava Damage ≥ 55 and Normal Damage ≥ 124
+          # Varia and Gravity - Lava Run (no damage) + 2 flame jet hits
+          Gravity Suit and Varia Suit and Damage Boosts (Beginner) and Normal Damage ≥ 12
 
 > Door to Fiery Storage; Heals? False
   * Layers: default
@@ -955,14 +1017,31 @@ Extra - room_id: [27]
   > Door to Entrance Hub
       Any of the following:
           All of the following:
-              # Climb on bars
-              Charge Beam or Missiles ≥ 10
+              # Varia + Deal with the Sidehoppers
+              Varia Suit
               Any of the following:
-                  Varia Suit
-                  Damage Runs (Intermediate) and Heat Damage ≥ 200
+                  Charge Beam or Missiles ≥ 6
+                  Screw Attack and Space Jump
+          # Space Jump + Screw Attack across the room
+          Screw Attack and Space Jump and Damage Runs (Intermediate) and Heat Damage ≥ 60
           All of the following:
-              # Shinespark
-              Speed Booster and Shinespark Tricks (Intermediate) and Disabled Door Lock Rando and Disabled Entrance Rando
+              # Shinespark across the room
+              Speed Booster and Damage Runs (Beginner) and Shinespark Tricks (Intermediate) and Heat Damage ≥ 20 and Disabled Door Lock Rando and Disabled Entrance Rando
+              # Requires breaking the bomb blocks in Fiery Storage
+              Can Break Single Bomb Blocks
+          All of the following:
+              # Fusion Suit + Deal with the Sidehoppers
+              Damage Runs (Intermediate) and Heat Damage ≥ 100
+              Charge Beam or Missiles ≥ 6
+          # Fusion Suit - Dip in the lava to avoid the Sidehoppers - include 2 flame jet hits because they spawn randomly
+          Damage Boosts (Advanced) and Damage Runs (Advanced) and Lava Damage ≥ 250 and Normal Damage ≥ 124
+          # Varia Suit - Lava Run + 2 flame jet hits
+          Varia Suit and Damage Boosts (Intermediate) and Damage Runs (Intermediate) and Lava Damage ≥ 60 and Normal Damage ≥ 36
+          # Gravity Suit - Lava Run + 2 flame jet hits
+          Gravity Suit and Damage Boosts (Advanced) and Damage Runs (Advanced) and Lava Damage ≥ 55 and Normal Damage ≥ 124
+          All of the following:
+              # Varia and Gravity - Lava Run (no damage) + 2 flame jet hits
+              Gravity Suit and Varia Suit and Damage Boosts (Beginner) and Normal Damage ≥ 12
               Any of the following:
                   Varia Suit
                   Damage Runs (Beginner) and Heat Damage ≥ 50
