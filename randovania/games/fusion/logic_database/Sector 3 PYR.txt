@@ -512,25 +512,23 @@ Extra - room_id: [12]
               # Varia only run - slower but lower damage
               Varia Suit and Damage Runs (Intermediate) and Lava Damage ≥ 270
               # Gravity only run - faster but higher damage
-              Gravity Suit and Damage Runs (Advanced) and Lava Damage ≥ 550
+              Gravity Suit and Damage Runs (Intermediate) and Lava Damage ≥ 550
               # Fusion Suit only run - slow and high damage
-              Damage Runs (Expert) and Lava Damage ≥ 700
+              Damage Runs (Advanced) and Lava Damage ≥ 700
   > Door to Sova Suite
-      All of the following:
-          # TODO - Find out why this was marked with a jump extend option, it really isn't needed because of the ladder
-          Any of the following:
-              # Heat Damage
-              Varia Suit
-              All of the following:
-                  # Killing the enemies will make this easier
-                  Damage Runs (Advanced) and Heat Damage ≥ 100
-                  Any of the following:
-                      Charge Beam or Missiles ≥ 20 or Screw Attack
-                      Power Bombs ≥ 2 and Can Use Power Bombs
-              # Just freezing the enemies is an option (takes a bit longer)
-              Damage Runs (Advanced) and Heat Damage ≥ 140 and Can Freeze Enemies
-              # Space Jump can speed the room up
-              Space Jump and Damage Runs (Intermediate) and Heat Damage ≥ 20
+      Any of the following:
+          # Heat Damage
+          Varia Suit
+          All of the following:
+              # Killing the enemies will make this easier
+              Damage Runs (Advanced) and Heat Damage ≥ 100
+              Any of the following:
+                  Charge Beam or Missiles ≥ 20 or Screw Attack
+                  Power Bombs ≥ 2 and Can Use Power Bombs
+          # Just freezing the enemies is an option (takes a bit longer)
+          Damage Runs (Advanced) and Heat Damage ≥ 140 and Can Freeze Enemies
+          # Space Jump can speed the room up
+          Space Jump and Damage Runs (Intermediate) and Heat Damage ≥ 20
 
 > Door to Sova Suite; Heals? False
   * Layers: default
@@ -604,8 +602,8 @@ Extra - room_id: [15]
               Damage Runs (Intermediate) and Heat Damage ≥ 110
           Any of the following:
               # Get around enemy
-              Charge Beam or Missiles ≥ 10 or Screw Attack or Normal Damage ≥ 120 or Can Freeze Enemies
-              # Full damage with no suits
+              Charge Beam or Missiles ≥ 10 or Screw Attack or Movement (Intermediate) or Can Freeze Enemies
+              # Full damage with no Suits
               Damage Boosts (Advanced) and Normal Damage ≥ 120
               # 80% damage with Varia
               Varia Suit and Damage Boosts (Intermediate) and Normal Damage ≥ 100
@@ -626,11 +624,11 @@ Extra - room_id: [15]
           Any of the following:
               # Get around the enemy
               Charge Beam or Missiles ≥ 10 or Screw Attack or Movement (Intermediate) or Can Freeze Enemies
-              # Full damage with no suits
+              # Full damage with no Suits
               Damage Boosts (Advanced) and Normal Damage ≥ 120
-              # 80% damage with varia
+              # 80% damage with Varia
               Varia Suit and Damage Boosts (Intermediate) and Normal Damage ≥ 100
-              # 10% damage with both
+              # 10% damage with both Suits
               Gravity Suit and Varia Suit and Damage Boosts (Beginner) and Normal Damage ≥ 15
 
 ----------------

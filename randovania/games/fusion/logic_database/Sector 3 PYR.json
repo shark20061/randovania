@@ -3270,7 +3270,7 @@
                                                                 "data": {
                                                                     "type": "tricks",
                                                                     "name": "DamageRuns",
-                                                                    "amount": 3,
+                                                                    "amount": 2,
                                                                     "negate": false
                                                                 }
                                                             },
@@ -3296,7 +3296,7 @@
                                                                 "data": {
                                                                     "type": "tricks",
                                                                     "name": "DamageRuns",
-                                                                    "amount": 4,
+                                                                    "amount": 3,
                                                                     "negate": false
                                                                 }
                                                             },
@@ -3321,7 +3321,7 @@
                         "Door to Sova Suite": {
                             "type": "and",
                             "data": {
-                                "comment": "TODO - Find out why this was marked with a jump extend option, it really isn't needed because of the ladder",
+                                "comment": null,
                                 "items": [
                                     {
                                         "type": "or",
@@ -4005,9 +4005,9 @@
                                                 {
                                                     "type": "resource",
                                                     "data": {
-                                                        "type": "damage",
-                                                        "name": "NormalDamage",
-                                                        "amount": 120,
+                                                        "type": "tricks",
+                                                        "name": "Movement",
+                                                        "amount": 2,
                                                         "negate": false
                                                     }
                                                 },
@@ -4023,7 +4023,7 @@
                                                             {
                                                                 "type": "and",
                                                                 "data": {
-                                                                    "comment": "Full damage with no suits",
+                                                                    "comment": "Full damage with no Suits",
                                                                     "items": [
                                                                         {
                                                                             "type": "resource",
@@ -4262,7 +4262,7 @@
                                                             {
                                                                 "type": "and",
                                                                 "data": {
-                                                                    "comment": "Full damage with no suits",
+                                                                    "comment": "Full damage with no Suits",
                                                                     "items": [
                                                                         {
                                                                             "type": "resource",
@@ -4288,7 +4288,7 @@
                                                             {
                                                                 "type": "and",
                                                                 "data": {
-                                                                    "comment": "80% damage with varia",
+                                                                    "comment": "80% damage with Varia",
                                                                     "items": [
                                                                         {
                                                                             "type": "resource",
@@ -4323,7 +4323,7 @@
                                                             {
                                                                 "type": "and",
                                                                 "data": {
-                                                                    "comment": "10% damage with both",
+                                                                    "comment": "10% damage with both Suits",
                                                                     "items": [
                                                                         {
                                                                             "type": "resource",
